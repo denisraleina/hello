@@ -1,4 +1,4 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
 import React from 'react';
 import { useParams } from 'react-router';
 import ExploreContainer from '../components/ExploreContainer';
@@ -26,9 +26,9 @@ const Page: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name={name} />
+        <IonButton color="primary">Primary</IonButton>
       </IonContent>
     </IonPage>
   );
 };
-
 export default Page;
